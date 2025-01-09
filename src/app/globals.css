@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,21 +9,25 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+p,
+span,
+a,
+.font-questrial {
+  font-family: "Questrial", serif;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-rubik {
+  font-family: "Rubik", serif;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.nav-link a:hover ~ div {
+  width: 40px;
+  transition: width 0.3s ease-in-out;
+}
+.primary{
+  color: rgb(116, 155, 63);
 }
